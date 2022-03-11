@@ -1,0 +1,44 @@
+/******************************************
+/* VARIABLES
+/*******************************************/
+:root {
+  --main-color: #F28888;
+  --main-text-color: #1E3859;
+  --title-color: #0A1626;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+@font-face {
+  font-family: "Norse Bold";
+  src: url("/media/Norse-Bold.otf");
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+/******************************************
+/* MODULES & STATES
+/*******************************************/
+
+/*# sourceMappingURL=style.css.map */
