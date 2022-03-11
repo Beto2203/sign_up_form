@@ -6,6 +6,8 @@
     --main-color: #F28888;
     --main-text-color: #1E3859;
     --title-color: #0A1626;
+    --bg-color: #fefbfb;
+    font-size: 10px;
 }
 
 /******************************************
@@ -37,11 +39,41 @@
 
 body{
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background-color: var(--bg-color);
+    display: flex;
+    height: 100vh;
+    width: 100vw;
 }
 
 /******************************************
 /* MODULES & STATES
 /*******************************************/
 
+#bgImg{
+    background-image: url("/media/samuel-ferrara-dKJXkKCF2D8-unsplash.jpg");
+    flex-basis: 40%;
+    background-size: cover;
+    background-position: center;
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Norse Bold", sans-serif;
+        font-size: 9rem;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.3);
+        margin-top: 40%;
+        padding: 10px 150px;
+        
+        img{
+            height: auto;
+            width: 100px;
+        }
+    }
+}
 
+main{
+    flex-basis: 60%;
+    display: flex;
+}
 
