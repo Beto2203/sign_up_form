@@ -13,11 +13,56 @@
 	<script src="js/main.js" defer></script>
 
 	<title>Document</title>
-	
+
 </head>
 
 <body>
 
+	<section id="bgImg">
+		<div>
+			<img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png"
+				alt="Odin's Logo" id="logo">
+			<h1>ODIN</h1>
+		</div>
+	</section>
+
+	<main>
+		<p>
+			This is not a real online service! You know you need something like this in your life to help you realize
+			your deepest dreams.<br>
+			Sign up now to get started.<br>
+			<br>
+			You know you want to.
+		</p>
+
+		<form action="">
+			<div id="text">
+				<h2>Let's do this!</h2>
+				<label for="firstName">FIRST NAME</label>
+				<input type="text" name="firstName" id="firstName">
+
+				<label for="lastName">LAST NAME</label>
+				<input type="text" name="lastName" id="lastName">
+				<label for="mail">EMAIL</label>
+				<input type="email" name="mail" id="mail">
+
+				<label for="phone">PHONE NUMBER</label>
+				<input type="number" name="phone" id="phone">
+
+				<label for="pass">PASSWORD</label>
+				<input type="password" name="pass" id="pass">
+
+				<label for="confirmPass">CONFIRM PASSWORD</label>
+				<input type="password" name="confirmPass" id="confirmPass">
+			</div>
+
+			<button type="submit" id="create">
+				Create Account
+			</button>
+		</form>
+
+		<p>Already have an account? <a href="#"> Log in</a></p>
+	</main>
 </body>
 
 </html>
