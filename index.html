@@ -2,89 +2,92 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" href="css/reset.css">
-	<!-- This gets created the first time you compile the Sass file -->
-	<link rel="stylesheet" href="css/style.css">
-	<!-- external JavaScript source with defer-->
-	<script src="js/main.js" defer></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- This gets created the first time you compile the Sass file -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- external JavaScript source with defer-->
+    <script src="js/main.js" defer></script>
 
-	<title>Document</title>
+    <title>Sign Up Form</title>
 
 </head>
 
 <body>
+    <section id="bgImg">
+        <div>
+            <img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png"
+                 alt="Odin's Logo" id="logo">
+            <h1>ODIN</h1>
+        </div>
+        <p>Photo by <a href="https://unsplash.com/@samferrara">Samuel Ferrara</a> on <a
+                href="https://unsplash.com/">Unsplash</a></p>
+    </section>
 
-	<section id="bgImg">
-		<div>
-			<img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png"
-				alt="Odin's Logo" id="logo">
-			<h1>ODIN</h1>
-		</div>
-		<p>Photo by <a href="https://unsplash.com/@samferrara">Samuel Ferrara</a> on <a href="https://unsplash.com/">Unsplash</a></p>
-	</section>
+    <main>
+        <p class="bold">
+            This is not a real online service! You know you need something like this in your life to help you
+            realize
+            your deepest dreams.<br>
+            Sign up <i>now</i> to get started.<br>
+            <br>
+            You <i>know</i> you want to.
+        </p>
 
-	<main>
-		<p class="bold">
-			This is not a real online service! You know you need something like this in your life to help you realize
-			your deepest dreams.<br>
-			Sign up <i>now</i> to get started.<br>
-			<br>
-			You <i>know</i> you want to.
-		</p>
+        <form action="">
+            <div id="text">
+                <h2>Let's do this!</h2>
 
-		<form action="">
-			<div id="text">
-				<h2>Let's do this!</h2>
+                <div class="formSection">
+                    <div class="soloInput">
+                        <label for="firstName">FIRST NAME</label>
+                        <input type="text" name="firstName" id="firstName" placeholder=" " required>
+                    </div>
 
-				<div class="formSection">
-					<div class="soloInput">
-						<label for="firstName">FIRST NAME</label>
-						<input type="text" name="firstName" id="firstName" placeholder=" " required>
-					</div>
+                    <div class="soloInput">
+                        <label for="lastName">LAST NAME</label>
+                        <input type="text" name="lastName" id="lastName" placeholder=" " required>
+                    </div>
+                </div>
 
-					<div class="soloInput">
-						<label for="lastName">LAST NAME</label>
-						<input type="text" name="lastName" id="lastName" placeholder=" " required>
-					</div>
-				</div>
+                <div class="formSection">
+                    <div class="soloInput">
+                        <label for="mail">EMAIL</label>
+                        <input type="email" name="mail" id="mail" placeholder=" " required>
+                    </div>
 
-				<div class="formSection">
-					<div class="soloInput">
-						<label for="mail">EMAIL</label>
-						<input type="email" name="mail" id="mail" placeholder=" " required>
-					</div>
+                    <div class="soloInput">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="number" name="phone" id="phone" placeholder=" ">
+                    </div>
+                </div>
 
-					<div class="soloInput">
-						<label for="phone">PHONE NUMBER</label>
-						<input type="number" name="phone" id="phone" placeholder=" ">
-					</div>
-				</div>
+                <div class="formSection">
+                    <div class="soloInput">
+                        <label for="pass">PASSWORD</label>
+                        <input type="password" name="pass" id="pass" minlength="6" maxlength="16" placeholder=" "
+                               required>
+                        <span id="passNotMatch" class="hidden">* Passwords do not match</span>
+                    </div>
 
-				<div class="formSection">
-					<div class="soloInput">
-						<label for="pass">PASSWORD</label>
-						<input type="password" name="pass" id="pass" minlength="6" maxlength="16"placeholder=" " required>
-						<span id="passNotMatch" class="hidden">* Passwords do not match</span>
-					</div>
+                    <div class="soloInput">
+                        <label for="confirmPass">CONFIRM PASSWORD</label>
+                        <input type="password" name="confirmPass" id="confirmPass" minlength="6" maxlength="16"
+                               placeholder=" " required>
+                    </div>
+                </div>
+            </div>
 
-					<div class="soloInput">
-						<label for="confirmPass">CONFIRM PASSWORD</label>
-						<input type="password" name="confirmPass" id="confirmPass" minlength="6" maxlength="16"placeholder=" " required>
-					</div>
-				</div>
-			</div>
+            <button type="submit" id="create">
+                Create Account
+            </button>
+        </form>
 
-			<button type="submit" id="create">
-				Create Account
-			</button>
-		</form>
-
-		<p id=logInLink>Already have an account? <a href="#"> Log in</a></p>
-	</main>
+        <p id=logInLink>Already have an account? <a href="#"> Log in</a></p>
+    </main>
 </body>
 
 </html>
