@@ -32,6 +32,22 @@
   clear: both;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
+i {
+  font-style: italic;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button,
+input[type=number] {
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  margin: 0;
+}
+
 @font-face {
   font-family: "Norse Bold";
   src: url("/media/Norse-Bold.otf");
@@ -64,8 +80,8 @@ body {
   font-family: "Norse Bold", sans-serif;
   font-size: 9rem;
   color: white;
-  background-color: rgba(0, 0, 0, 0.3);
-  margin-top: 40%;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin-top: 45%;
   padding: 10px;
 }
 #bgImg div img {
@@ -103,9 +119,28 @@ form label {
 form input {
   padding: 0 10px;
   height: 30px;
-  border: 0.2px solid lightgray;
+  border: 1px solid #dedede;
   border-radius: 5px;
   font-size: 1.6rem;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid;
+  border-color: blue;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+input:not(:focus):not(:placeholder-shown):invalid {
+  outline: none;
+  border: 1px solid;
+  border-color: red;
+}
+
+input:not(:focus):not(:placeholder-shown):valid {
+  outline: none;
+  border: 1px solid;
+  border-color: green;
 }
 
 #text {
@@ -114,8 +149,8 @@ form input {
   gap: 30px;
   height: 300px;
   background-color: white;
-  border: 0.5px solid #f1f1f1;
-  box-shadow: 0 8px 8px -6px rgba(0, 0, 0, 0.3);
+  border: 1px solid #f1f1f1;
+  box-shadow: 0 8px 8px -6px rgba(0, 0, 0, 0.2);
   font-size: 1.6rem;
   padding: 15px 40px;
 }
@@ -133,6 +168,12 @@ form input {
   display: flex;
   flex-direction: column;
   width: 35%;
+}
+
+#passNotMatch {
+  color: red;
+  font-size: 1.2rem;
+  margin-top: 2px;
 }
 
 #create {
@@ -159,6 +200,17 @@ form input {
 .bold {
   font-weight: bold;
   color: var(--title-color);
+}
+
+#logInLink {
+  font-size: 1.8rem;
+  color: var(--title-color);
+  font-weight: bold;
+}
+#logInLink a {
+  text-decoration: none;
+  color: var(--main-color);
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */
