@@ -72,6 +72,7 @@ body {
   flex-basis: 40%;
   background-size: cover;
   background-position: center;
+  position: relative;
 }
 #bgImg div {
   display: flex;
@@ -88,6 +89,17 @@ body {
   height: auto;
   width: 100px;
 }
+#bgImg p {
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+}
+#bgImg p a {
+  color: white;
+}
 
 main {
   flex-basis: 60%;
@@ -96,10 +108,9 @@ main {
   background-color: var(--bg-color);
 }
 main p:first-child {
-  margin: 170px 0 60px;
-  padding-right: 50px;
+  margin: 130px 0 60px;
   font-size: 2.5rem;
-  padding: 15px 40px;
+  padding: 15px 40px 15px 50px;
 }
 main p:last-child {
   padding: 15px 40px;
@@ -118,7 +129,7 @@ form label {
 }
 form input {
   padding: 0 10px;
-  height: 30px;
+  height: 35px;
   border: 1px solid #dedede;
   border-radius: 5px;
   font-size: 1.6rem;
@@ -126,28 +137,30 @@ form input {
 
 input:focus {
   outline: none;
-  border: 1px solid;
-  border-color: blue;
+  border: 1px solid blue;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-input:not(:focus):not(:placeholder-shown):invalid {
-  outline: none;
-  border: 1px solid;
-  border-color: red;
 }
 
 input:not(:focus):not(:placeholder-shown):valid {
   outline: none;
-  border: 1px solid;
-  border-color: green;
+  border: 1px solid green;
+}
+
+input:not(:focus):not(:placeholder-shown):invalid {
+  outline: none;
+  border: 1px solid red;
+}
+
+#text .invalid {
+  outline: none;
+  border: 1px solid red;
 }
 
 #text {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  height: 300px;
+  height: 320px;
   background-color: white;
   border: 1px solid #f1f1f1;
   box-shadow: 0 8px 8px -6px rgba(0, 0, 0, 0.2);
