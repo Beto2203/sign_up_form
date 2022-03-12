@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/reset.css">
 	<!-- This gets created the first time you compile the Sass file -->
 	<link rel="stylesheet" href="css/style.css">
 	<!-- external JavaScript source with defer-->
@@ -27,7 +27,7 @@
 	</section>
 
 	<main>
-		<p>
+		<p class="bold">
 			This is not a real online service! You know you need something like this in your life to help you realize
 			your deepest dreams.<br>
 			Sign up now to get started.<br>
@@ -38,22 +38,42 @@
 		<form action="">
 			<div id="text">
 				<h2>Let's do this!</h2>
-				<label for="firstName">FIRST NAME</label>
-				<input type="text" name="firstName" id="firstName">
 
-				<label for="lastName">LAST NAME</label>
-				<input type="text" name="lastName" id="lastName">
-				<label for="mail">EMAIL</label>
-				<input type="email" name="mail" id="mail">
+				<div class="formSection">
+					<div class="soloInput">
+						<label for="firstName">FIRST NAME</label>
+						<input type="text" name="firstName" id="firstName">
+					</div>
 
-				<label for="phone">PHONE NUMBER</label>
-				<input type="number" name="phone" id="phone">
+					<div class="soloInput">
+						<label for="lastName">LAST NAME</label>
+						<input type="text" name="lastName" id="lastName">
+					</div>
+				</div>
 
-				<label for="pass">PASSWORD</label>
-				<input type="password" name="pass" id="pass">
+				<div class="formSection">
+					<div class="soloInput">
+						<label for="mail">EMAIL</label>
+						<input type="email" name="mail" id="mail">
+					</div>
 
-				<label for="confirmPass">CONFIRM PASSWORD</label>
-				<input type="password" name="confirmPass" id="confirmPass">
+					<div class="soloInput">
+						<label for="phone">PHONE NUMBER</label>
+						<input type="number" name="phone" id="phone">
+					</div>
+				</div>
+
+				<div class="formSection">
+					<div class="soloInput">
+						<label for="pass">PASSWORD</label>
+						<input type="password" name="pass" id="pass">
+					</div>
+
+					<div class="soloInput">
+						<label for="confirmPass">CONFIRM PASSWORD</label>
+						<input type="password" name="confirmPass" id="confirmPass">
+					</div>
+				</div>
 			</div>
 
 			<button type="submit" id="create">
