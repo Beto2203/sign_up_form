@@ -30,9 +30,9 @@
 		<p class="bold">
 			This is not a real online service! You know you need something like this in your life to help you realize
 			your deepest dreams.<br>
-			Sign up now to get started.<br>
+			Sign up <i>now</i> to get started.<br>
 			<br>
-			You know you want to.
+			You <i>know</i> you want to.
 		</p>
 
 		<form action="">
@@ -42,36 +42,37 @@
 				<div class="formSection">
 					<div class="soloInput">
 						<label for="firstName">FIRST NAME</label>
-						<input type="text" name="firstName" id="firstName">
+						<input type="text" name="firstName" id="firstName" placeholder=" " required>
 					</div>
 
 					<div class="soloInput">
 						<label for="lastName">LAST NAME</label>
-						<input type="text" name="lastName" id="lastName">
+						<input type="text" name="lastName" id="lastName" placeholder=" " required>
 					</div>
 				</div>
 
 				<div class="formSection">
 					<div class="soloInput">
 						<label for="mail">EMAIL</label>
-						<input type="email" name="mail" id="mail">
+						<input type="email" name="mail" id="mail" placeholder=" " required>
 					</div>
 
 					<div class="soloInput">
 						<label for="phone">PHONE NUMBER</label>
-						<input type="number" name="phone" id="phone">
+						<input type="number" name="phone" id="phone" placeholder=" ">
 					</div>
 				</div>
 
 				<div class="formSection">
 					<div class="soloInput">
 						<label for="pass">PASSWORD</label>
-						<input type="password" name="pass" id="pass">
+						<input type="password" name="pass" id="pass" minlength="6" maxlength="16"placeholder=" " required>
+						<span id="passNotMatch" class="hidden">* Passwords do not match</span>
 					</div>
 
 					<div class="soloInput">
 						<label for="confirmPass">CONFIRM PASSWORD</label>
-						<input type="password" name="confirmPass" id="confirmPass">
+						<input type="password" name="confirmPass" id="confirmPass" minlength="6" maxlength="16"placeholder=" " required>
 					</div>
 				</div>
 			</div>
@@ -81,7 +82,7 @@
 			</button>
 		</form>
 
-		<p>Already have an account? <a href="#"> Log in</a></p>
+		<p id=logInLink>Already have an account? <a href="#"> Log in</a></p>
 	</main>
 </body>
 
