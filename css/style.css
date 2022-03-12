@@ -50,7 +50,7 @@ input[type=number] {
 
 @font-face {
   font-family: "Norse Bold";
-  src: url("/Norse-Bold.otf");
+  src: url("Norse-Bold.otf");
 }
 button, input, select, textarea {
   font-family: inherit;
@@ -68,7 +68,7 @@ body {
 /* MODULES & STATES
 /*******************************************/
 #bgImg {
-  background-image: url("/samuel-ferrara-dKJXkKCF2D8-unsplash.jpg");
+  background-image: url("samuel-ferrara-dKJXkKCF2D8-unsplash.jpg");
   flex-basis: 40%;
   background-size: cover;
   background-position: center;
